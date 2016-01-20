@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Damage Demo</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/damage.css">
+		<script type="text/javascript" src="lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="src/jquery.damage.js"></script>
+		<script type="text/javascript">
+			var getRandomInt = function(min, max) {
+		  	return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+			$(document).ready(function(){
+				$('#damageAction').on('click', function(){
+					$(document).damage(getRandomInt(10, 99999), { fontSize: 80 });
+				})
+				$('.block-1').on('click', function(){
+					$(this).damage(getRandomInt(10, 99999), { fontSize: 24 });
+				})
+				$('.block-2').on('click', function(){
+					$(this).damage(getRandomInt(10, 99999), { fontSize: 24 });
+				})
+				$('.block-3').on('click', function(){
+					$(this).damage(getRandomInt(10, 99999), { fontSize: 24 });
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		<a href='#' id='damageAction'>Click here to display damage to the page</a> or click on one of the blocks below.
+		<div class='block block-1'></div>
+		<div class='block block-2'></div>
+		<div class='block block-3'></div>
+	</body>
+
+</html>

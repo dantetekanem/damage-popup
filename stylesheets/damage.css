@@ -1,0 +1,21 @@
+.block {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+.block-1 {
+	top: 100px;
+	left: 250px;
+	background-color: red;
+}
+.block-2 {
+	top: 200px;
+	left: 400px;
+	background-color: blue;
+}
+.block-3 {
+	top: 350px;
+	left: 100px;
+	background-color: yellow;
+}
